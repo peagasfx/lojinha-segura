@@ -1,0 +1,150 @@
+<!doctype html>
+<html
+  lang="pt-BR"
+  style="
+    --color-background: #ffffff;
+    --color-background-soft: #f7f7f7;
+    --color-background-alt: #f5f5f5;
+    --color-background-light: #f5f5f5;
+    --color-border-light: #e8e8e8;
+    --color-border-medium: #dddddd;
+    --color-text-primary: #222222;
+    --color-text-secondary: #555555;
+    --color-text-tertiary: #777777;
+    --color-text-light: #999999;
+    --color-text-white: #ffffff;
+    --color-primary: #ff2b56;
+    --color-primary-light: #ff3b70;
+    --color-primary-dark: #c2185b;
+    --color-secondary: #00b5e4;
+    --color-secondary-light: #e8f9ff;
+    --color-accent: #ff6b35;
+    --color-success: #2e7d32;
+    --color-success-light: #e8f5e9;
+    --color-warning: #f57c00;
+    --color-warning-light: #fff3e0;
+    --color-error: #ff3b38;
+    --color-error-light: #ffe3e3;
+    --color-star-color: #ff6b35;
+    --color-review-star-color: #ffb800;
+    --color-badge-background: #ff3b38;
+    --color-badge-text: #ffffff;
+    --color-avatar-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --font-family:
+      -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen,
+      Ubuntu, Cantarell, sans-serif;
+    --font-size-xs: 11px;
+    --font-size-sm: 12px;
+    --font-size-base: 13px;
+    --font-size-md: 14px;
+    --font-size-lg: 15px;
+    --font-size-xl: 16px;
+    --font-size-2xl: 18px;
+    --font-size-3xl: 20px;
+    --font-size-4xl: 22px;
+    --font-size-5xl: 24px;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 20px;
+    --spacing-2xl: 24px;
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 10px;
+    --radius-xl: 12px;
+    --radius-2xl: 16px;
+    --radius-3xl: 20px;
+    --radius-full: 50%;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-bottom-nav: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  "
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-w0UVeQ37.ico" />
+
+    <title>Garimpo Barato</title>
+    <script type="module" crossorigin src="/assets/index-CRH4LhSi.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DtJivcym.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!--
+      TikTok Pixel: Inicializa o objeto ttq imediatamente (sem carregar script externo),
+      para que ttq.track() funcione mesmo antes do SDK carregar.
+      O script events.js é carregado com delay de 1.5s para não competir
+      com os fetches de dados no WebView do TikTok.
+    -->
+    <script>
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = (w[t] = w[t] || []);
+        ttq.methods = [
+          "page",
+          "track",
+          "identify",
+          "instances",
+          "debug",
+          "on",
+          "off",
+          "once",
+          "ready",
+          "alias",
+          "group",
+          "enableCookie",
+          "disableCookie",
+          "holdConsent",
+          "revokeConsent",
+          "grantConsent",
+        ];
+        ttq.setAndDefer = function (t, e) {
+          t[e] = function () {
+            t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+          };
+        };
+        for (var i = 0; i < ttq.methods.length; i++)
+          ttq.setAndDefer(ttq, ttq.methods[i]);
+        ttq.instance = function (t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)
+            ttq.setAndDefer(e, ttq.methods[n]);
+          return e;
+        };
+        ttq.load = function (e, n) {
+          var r = "https://analytics.tiktok.com/i18n/pixel/events.js";
+          ttq._i = ttq._i || {};
+          ttq._i[e] = [];
+          ttq._i[e]._u = r;
+          ttq._t = ttq._t || {};
+          ttq._t[e] = +new Date();
+          ttq._o = ttq._o || {};
+          ttq._o[e] = n || {};
+          // Carregar o script externo com delay para não competir com dados
+          setTimeout(function () {
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = r + "?sdkid=" + e + "&lib=" + t;
+            document.head.appendChild(s);
+          }, 1500);
+        };
+        ttq.load("D6141EJC77UAR2VU67CG");
+        ttq.page();
+      })(window, document, "ttq");
+    </script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"2b58f4db98db4267a818972bd3e3d48d","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
