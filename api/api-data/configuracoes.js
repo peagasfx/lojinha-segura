@@ -1,5 +1,8 @@
-const config = require('../../../data/configuracoes.json');
-
-module.exports = function handler(req, res) {
-  res.status(200).json(config);
+module.exports = (req, res) => {
+  res.status(200).json({
+    nome_loja: "Garimpo Barato",
+    cartao_habilitado: "1",
+    tema: "default",
+    cpf_obrigatorio: "nao_exigir"
+  });
 };
